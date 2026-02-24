@@ -1,8 +1,9 @@
 body{
     margin: 0px 10%;
     font-family: Arial, sans-serif;
+    background-image: url("../images/bg.png");
 }
-
+.container{ background-color: white;}
 header{
     background-color: #9abcf8;
     color: white;
