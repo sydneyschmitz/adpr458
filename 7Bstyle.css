@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #acd5eb;
+  color: rgb(0, 0, 0);
+  padding: .05rem;
+  text-align: center;
+  font-size: xx-small;
+  font-weight: lighter;
+}
+
+
+section {
+nav {
+    text-align: left;
+}
+
+.logo{
+    text-align: center;
+}
+
+.btn {
+    text-align: right;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+.btn {
+  background: rgb(170, 21, 21);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: xx-small;
+}
+}
+
+
+main{
+
+.hero {
+  background-image: url("adpr458/images/7Bmain.png");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: larger;
+  font: bolder;
+}
+
+.btn {
+  background: rgb(170, 21, 21);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: xx-small;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+}
