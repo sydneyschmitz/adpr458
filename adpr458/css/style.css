@@ -3,7 +3,6 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-
 body{
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
@@ -11,7 +10,7 @@ body{
 }
 .container{ background-color: white;}
 header{
-    background-color: #ffd4ec;
+    background-color: #202653;
     color: white;
     padding: 2rem;
 }
@@ -21,36 +20,41 @@ h1{
    text-align: center;
    padding-bottom: 20px;
    padding-top: 20px;
-   color: #3e3030;
+   color: #ffffff;
 }
 
 h3{
     font-size: 16px;
-    text-align: center;
-    color: #3e3030;
-    padding-bottom: 200px;
+    text-align: left;
+    color: #202653;
+    padding-bottom: 10px;
 }
 
 p{
     font-size: 16px;
-    margin-bottom: 10px;
-    padding-bottom: 20px;
+    margin-bottom: 20px
 }
 
 h2{
     font-size: 1.5rem;
     font-weight: bold;
-    color: #3e3030;
+    color: #202653;
     padding-bottom: 5px;
-   padding-top: 100px;
-   text-align: center;
+   padding-top: 10px;
+   text-align: left;
 }
 
 h4{    font-size: 1.5rem;
     font-weight: bold;
-    color: #3e3030;
-   padding-top: 10px;
-   text-align: left;}
+    color: #202653;
+   text-align: left
+}
+
+h5{    font-size: 16px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 10px;
+}
 
 img{
     max-width: 100%;
@@ -60,8 +64,9 @@ img{
   height: 200px; 
   border-radius: 50%;
   object-fit: cover; 
+  margin-bottom: 40px;
+  margin-top: 80px;
 }
-
 
 
 a:link, a:visited {
@@ -74,7 +79,6 @@ a:hover {
     text-decoration: none
 }
 
-
 .container{ 
     background-color: white;
 display: grid;
@@ -83,7 +87,6 @@ grid-template-columns: repeat(12, 1fr);
 margin: 0 auto;
 width: min(95%, 75rem)
 }
-
 
 .container > * {
     grid-column: span 12;
@@ -99,14 +102,13 @@ width: min(95%, 75rem)
 }
 
 nav{
-    background-color: #3e3030;
+    background-color: #202653;
     padding: 0 1rem;
     display: flex;
     justify-content: right;
     position: sticky;
     top: 0;
 }
-
 
 nav ul{
     margin: 0;
@@ -137,9 +139,8 @@ nav a:hover {
 
 
 
-
 .navbar {
-    background-color: #3e3030;
+    background-color: #202653;
     display: flex;              
     align-items: center;
 }
@@ -164,10 +165,9 @@ nav a:hover {
 
 
 
-
 .button:link, .button:visited {
     color:white;
-    background-color: #3e3030;
+    background-color: #202653;
     text-align:center;
     text-decoration: none;
     padding: 1rem 1.75rem;
@@ -179,8 +179,8 @@ nav a:hover {
 }
 
 .button:hover {
-    background-color: #ffd4ec;
-    color: #3e3030;
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .card {
@@ -199,7 +199,6 @@ nav a:hover {
     padding: 0 2rem 0.5rem;
 }
 
-
 @media screen and (min-width: 40rem){
     .col-span-4{
         grid-column: span 4;
@@ -217,4 +216,50 @@ nav a:hover {
         flex-basis: 27.5%;
     }
 
+}
+
+
+/* Layout the main columns */
+.main-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* 2 parts text, 1 part sidebar */
+    gap: 40px;
+    margin-top: 20px;
+}
+
+/* Accordion Styling */
+details {
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+    margin-top: 5rem;
+}
+
+summary {
+    cursor: pointer;
+    list-style: none; /* Removes the default triangle in some browsers */
+    font-weight: bold;
+    color: #3e3030;
+}
+
+summary::after {
+    content: " ▼"; /* Adds a small arrow indicator */
+    font-size: 0.8rem;
+}
+
+details[open] summary::after {
+    content: " ▲"; /* Changes arrow when open */
+}
+
+/* Sidebar Alignment */
+.sidebar {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr; /* Stacks on mobile */
+    }
 }
